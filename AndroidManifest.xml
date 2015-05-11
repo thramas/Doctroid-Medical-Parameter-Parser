@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samarthkhare.myapplication" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_medical"
+        android:label="Doctroid"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Doctroid" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DiagnoseSplashActivity"
+            android:label="Doctroid" >
+        </activity>
+        <activity
+        android:name=".ResultActivity"
+        android:label="Doctroid" >
+    </activity>
+        <activity
+        android:name=".CircleActivity"
+        android:label="Doctroid" >
+    </activity>
+        <activity
+            android:name=".DiagnosePimaActivity"
+            android:label="Doctroid" >
+        </activity>
+        <activity
+            android:name=".DiagnoseHeartActivity"
+            android:label="Doctroid" >
+        </activity>
+        <activity
+            android:name=".DiagnoseBreastActivity"
+            android:label="Doctroid" >
+        </activity>
+    </application>
+
+</manifest>

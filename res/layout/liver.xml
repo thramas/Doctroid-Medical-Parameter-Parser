@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrib1"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:hint="Mean Corpuscular Volume"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrib2"
+            android:inputType="number"
+            android:hint="Alkphos Alkanine Phosphotase"
+            android:layout_below="@+id/atrib1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrib3"
+            android:inputType="number"
+            android:hint="SGPT"
+            android:layout_below="@+id/atrib2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrib4"
+            android:inputType="number"
+            android:hint="SGOT"
+            android:layout_below="@+id/atrib3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrib5"
+            android:inputType="number"
+            android:hint="Gamma-GT"
+            android:layout_below="@+id/atrib4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrib6"
+            android:inputType="number"
+            android:hint="No of drinks per day"
+            android:layout_below="@+id/atrib5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrib7"
+            android:inputType="number"
+            android:hint="Selector Field"
+            android:layout_below="@+id/atrib6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Analyse Report"
+            android:id="@+id/button"
+            android:layout_below="@+id/atrib7"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="startResult" />
+
+    </RelativeLayout>
+</ScrollView>

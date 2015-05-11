@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Patient's Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignStart="@+id/age" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:inputType="number"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:hint="Age" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIAGNOSE ME!"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="launchDiagnose" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:onClick="genderCheck"
+        android:id="@+id/male"
+        android:layout_below="@+id/age"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignStart="@+id/age"
+        android:layout_marginTop="30dp" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/female"
+        android:onClick="genderCheck"
+        android:layout_alignTop="@+id/male"
+        android:layout_alignRight="@+id/submit"
+        android:layout_alignEnd="@+id/submit" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breast Cancer"
+        android:id="@+id/bcancer"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/male"
+        android:layout_alignStart="@+id/male"
+        android:onClick="onCheckBoxSelected" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart Disease"
+        android:id="@+id/lcancer"
+        android:layout_below="@+id/bcancer"
+        android:layout_alignLeft="@+id/bcancer"
+        android:layout_alignStart="@+id/bcancer"
+        android:onClick="onCheckBoxSelected" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liver Disorder"
+        android:id="@+id/mcancer"
+        android:layout_below="@+id/lcancer"
+        android:layout_alignLeft="@+id/lcancer"
+        android:layout_alignStart="@+id/lcancer"
+        android:onClick="onCheckBoxSelected" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pima Indian Diabetes"
+        android:id="@+id/ncancer"
+        android:layout_below="@+id/mcancer"
+        android:layout_alignLeft="@+id/mcancer"
+        android:layout_alignStart="@+id/mcancer"
+        android:onClick="onCheckBoxSelected" />
+
+</RelativeLayout>
